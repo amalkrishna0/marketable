@@ -1,0 +1,100 @@
+.main_home_body{
+    height: 240vh;
+    background-color: black;
+}
+.main_profile{
+    background-image: url("./Head.png");
+    width: 100%;    
+    aspect-ratio: 16/9;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.bitcoin_image1{
+    background-image: url("Bitcoin2.png");
+    background-size: cover;
+    position: absolute; /* Position the Bitcoin image */
+    top: 10%; /* Position from the top */
+    left: 0%; /* Position from the left */
+    transform: translate(0%, +50%); /* Center the image */
+    width: 100px; /* Adjust width as needed */
+    height: 120px; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure the Bitcoin image appears on top */
+}
+.body{
+    margin-top: 0px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    text-align: center;
+}
+.cards {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    width: 80%;
+    height: 70vh;
+    margin: 0 auto;
+}
+
+.card1,
+.card2,
+.card3 {
+    flex: 1; /* Each card takes equal space */
+}
+
+.card1_content,
+.card2_content,
+.card3_content{
+    background-color: white;
+    height: 95%;
+    width: 90%;
+    padding: 5px;
+    margin: 10px auto;
+    color: black;
+    border: 1px solid white;
+    font-weight: 800;
+}
+.image1{
+    background-image: url("./BINOY.jpg");
+    aspect-ratio: 1/1;
+    background-size: cover;
+    border-radius: 10px;
+}
+.image2{
+    background-image: url("./BINOY.jpg");
+    aspect-ratio:1/1 ;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+.image3{
+    background-image: url("./SREEKANTH.jpg");
+    aspect-ratio: 1/1;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+.content1,.content2,.content3{
+    margin-top: 10px;
+    border-bottom: 1px solid gray;
+    height: 55px;
+}
+
+@media only screen and (max-width: 500px) {
+    h2{
+        font-size:20px ;
+    }
+    .cards{
+        height: 230px;
+        font-size: 10px;
+    }
+    .bitcoin_image1{
+        height: 50px;
+        width: 40px;
+    }
+  
+}
