@@ -1,0 +1,77 @@
+.main_body_reason {
+    display: flex;
+    justify-content: center; 
+    width: 90%;
+    margin: 0 10% auto; 
+    overflow-x: hidden;
+  }
+  
+  .left_body_reason {
+    flex: 0 0 60%; 
+    font-size: 1.5rem;
+  }
+  .right_body_reason {
+    flex: 0 0 40%; 
+    position: relative;
+  }
+  .bitcoin{
+    position: absolute;
+    top: 70%; /* Adjust vertically */
+    right: 0; /* Positioned to the right */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+.bitcoin1{
+    position: absolute;
+    top: 0%;
+    right: -20%;
+}
+
+  .left_body_reason h1{
+    margin: 10px;
+  }
+
+.reason_points {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Two columns */
+    grid-gap: 20px; /* Gap between items */
+  }
+  .reason_point{
+    display: flex;
+  }
+  
+  .reason_point img {
+    width: 100%;
+    max-width: 100px; /* Adjust size as needed */
+  }
+  
+  .reason_point_detail{
+    display: block;
+  }
+
+
+  @media only screen and (max-width: 1080px) {
+    .right_body_reason {
+        display: none;
+    }
+    .left_body_reason{
+        flex: 0 0 80%;
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .left_body_reason{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .left_body_reason{
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width: 458px) {
+    .left_body_reason{
+        font-size: 0.4rem;
+    }
+}

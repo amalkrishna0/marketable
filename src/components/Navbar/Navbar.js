@@ -23,7 +23,7 @@ export default function Navbar() {
 
   return (
     <header>
-      <div className="logo">MARKETABLE</div>
+      <div className="logo"></div>
       <input type="checkbox" id="nav_check" hidden />
       <nav>
         <ul>
