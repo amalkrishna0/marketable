@@ -1,74 +1,124 @@
-.main_home_body{
-    height: max-content;
-    background-color: black;
+.main_home_body {
+  height: max-content;
+  background-color: black;
+  overflow: hidden;
 }
-.profile img{
-    width: 100%;    
-    aspect-ratio: 16/9;
-    background-size: contain;
-    background-repeat: no-repeat;
+.profile_img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.courses{
-    margin:80px auto;
-    width: 90%; 
-    display: flex;
-    justify-content: space-between;
-
+.courses {
+  margin: 80px auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .course img {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
+  width: 100%;
+  border-radius: 10px;
+  display: block;
 }
-.course{
-    flex-basis: 31%;
+.course {
+  flex-basis: 31%;
 }
-.caption-content{
-    font-size: 1rem;
-    height: max-content;
-    transform: translateY(-100%);
-    background-color: rgba(255, 255, 255, 0.952);
-    border-end-end-radius: 10px;
-    border-end-start-radius: 10px;
-
-}
-
-.caption-content p{
-    color: black    ;
-    padding-right: 5%;
-    padding-left: 5%;
-    border-bottom: 1px solid white;
-}
-.caption-content h4{
-    color: black;
-
-    padding-right: 5%;
-    padding-left: 5%;
-    
+.caption-content {
+  font-size: 1rem;
+  height: max-content;
+  transform: translateY(-100%);
+  background-color: rgba(255, 255, 255, 0.952);
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
 }
 
-.strike{
-    text-decoration:line-through;
+.caption-content p {
+  color: black;
+  padding-right: 5%;
+  padding-left: 5%;
+  border-bottom: 1px solid white;
+}
+.caption-content h4 {
+  color: black;
+
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+.bitcoin2_home {
+  position: absolute;
+  top: 5%; /* Adjust vertically */
+  left: -10%;
+  height: 50%;
+}
+.bitcoin1_home {
+  position: absolute;
+  top: 5%;
+  right: -18%;
+  /* Adjust vertically */
+  height: 50%;
 }
 
 
 @media screen and (max-width: 1025px) {
-
-    .course p , .course h4{
-        font-size: .8rem;
-    }
+  .course p,
+  .course h4 {
+    font-size: 0.8rem;
+  }
+  .bitcoin2_home {
+    position: absolute;
+    top: 5%; /* Adjust vertically */
+    left: -10%;
+    height: 40%;
+  }
+  .bitcoin1_home {
+    position: absolute;
+    top: 9%;
+    right: -13%;
+    /* Adjust vertically */
+    height: 30%;
+  }
 }
 @media screen and (max-width: 835px) {
-
-    .course p , .course h4{
-        font-size: .6rem;
-    }
+  .course p,
+  .course h4 {
+    font-size: 0.6rem;
+  }
+  .bitcoin2_home {
+    position: absolute;
+    top: 5%; /* Adjust vertically */
+    left: -10%;
+    height: 30%;
+  }
+  .bitcoin1_home {
+    position: absolute;
+    top: 9%;
+    right: -13%;
+    /* Adjust vertically */
+    height: 25%;
+  }
 }
 @media screen and (max-width: 620px) {
-
-    .course p , .course h4{
-        font-size: .4rem;
-    }
+  .course p,
+  .course h4 {
+    font-size: 0.4rem;
+  }
+  .bitcoin2_home {
+    position: absolute;
+    top: 5%; /* Adjust vertically */
+    left: -10%;
+    height: 15%;
+  }
+  .bitcoin1_home {
+    position: absolute;
+    top: 9%;
+    right: -13%;
+    /* Adjust vertically */
+    height: 15%;
+  }
 }

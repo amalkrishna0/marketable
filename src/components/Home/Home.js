@@ -3,11 +3,17 @@ import "./home.css";
 import profile from ".//Head.png";
 import course1 from ".//BINOY.jpg";
 import course2 from ".//SREEKANTH.jpg";
+import bitcoin1 from ".//Bitcoin1.png"
+// import bitcoin3 from ".//Bitcoin3.png"
+import bitcoin2 from ".//Bitcoin2.png"
 export default function Home() {
   return (
     <div className="main_home_body">
       <div className="profile">
-        <img src={profile} alt="Profile" />
+        <img src={profile} alt="Profile" className="profile_img" />
+        <img src={bitcoin2} alt="no" className="bitcoin2_home" />
+        <img src={bitcoin1} alt="no" className="bitcoin1_home" />
+
       </div>
       <div className="courses">
         <div className="course">
