@@ -16,7 +16,6 @@ header {
     justify-content: space-between;
     padding: 0 50px;
     color: white;
-    border-bottom: 1px solid white;
 }
 header .logo {
     font-size: 30px;
@@ -36,6 +35,7 @@ header nav ul li a {
 }
 header nav ul li a:hover,
 header nav ul li a.active {
+    transform: scale(1.1);
     border-bottom-color: dodgerblue;
 }
 .hamburger {

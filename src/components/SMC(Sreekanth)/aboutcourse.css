@@ -1,0 +1,42 @@
+.main_about_div1{
+    height: 100%;
+    background-color: white ;
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about_course_main{
+    margin: 0 auto;
+    width: 70%;
+}
+.about_course_main h2{
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgb(245, 245, 245);
+    padding-top: 50px;
+}
+.about_course_content{
+    width: 100%;
+    text-align: center;
+    font-family: 'Roobert',sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8; /* Adjust the value to set the desired gap */
+
+    background-color: rgb(245, 245, 245);
+    height: 100%;
+    padding: 70px;
+}
+
+@media screen and (max-width: 800px) {
+    .about_course_content{
+        font-size: 0.9rem;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .about_course_content{
+        font-size: 0.6rem;
+    }
+    
+}
+

@@ -1,8 +1,9 @@
 .main_home_body {
   height: max-content;
   background-color: black;
-  overflow: hidden;
+  overflow-x: hidden;
 }
+
 .profile_img {
   width: 100%;
   aspect-ratio: 16/9;
@@ -11,10 +12,11 @@
 }
 
 .courses {
-  margin: 80px auto;
+  margin: 80px auto;  
   width: 90%;
   display: flex;
   justify-content: space-between;
+  display: none;
 }
 
 .course img {
@@ -42,9 +44,8 @@
 }
 .caption-content h4 {
   color: black;
-
   padding-right: 5%;
-  padding-left: 5%;
+  padding-left: 5%; 
 }
 
 .strike {
@@ -52,18 +53,17 @@
 }
 .bitcoin2_home {
   position: absolute;
-  top: 5%; /* Adjust vertically */
+  top: 5%; 
   left: -10%;
   height: 50%;
-}
+} 
+
 .bitcoin1_home {
   position: absolute;
   top: 5%;
   right: -18%;
-  /* Adjust vertically */
   height: 50%;
 }
-
 
 @media screen and (max-width: 1025px) {
   .course p,
@@ -72,17 +72,19 @@
   }
   .bitcoin2_home {
     position: absolute;
-    top: 5%; /* Adjust vertically */
+    top: 5%;
     left: -10%;
     height: 40%;
   }
-  .bitcoin1_home {
+  .bitcoin1_home{
+    display: none;
+  }
+  /* .bitcoin1_home {
     position: absolute;
     top: 9%;
     right: -13%;
-    /* Adjust vertically */
     height: 30%;
-  }
+  } */
 }
 @media screen and (max-width: 835px) {
   .course p,
@@ -91,17 +93,16 @@
   }
   .bitcoin2_home {
     position: absolute;
-    top: 5%; /* Adjust vertically */
+    top: 5%; 
     left: -10%;
     height: 30%;
   }
-  .bitcoin1_home {
+  /* .bitcoin1_home {
     position: absolute;
     top: 9%;
     right: -13%;
-    /* Adjust vertically */
     height: 25%;
-  }
+  } */
 }
 @media screen and (max-width: 620px) {
   .course p,
@@ -110,15 +111,23 @@
   }
   .bitcoin2_home {
     position: absolute;
-    top: 5%; /* Adjust vertically */
+    top: 5%;
     left: -10%;
     height: 15%;
   }
-  .bitcoin1_home {
+  .bitcoin1_home{
+    display: none;
+  }
+  /* .bitcoin1_home {
     position: absolute;
     top: 9%;
     right: -13%;
-    /* Adjust vertically */
     height: 15%;
+  } */
+}
+
+@media screen and (max-width: 416px) {
+  .courses{
+    display: none;
   }
 }

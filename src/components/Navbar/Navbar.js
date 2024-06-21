@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './navbar.css'; // Import your CSS file for navbar styling
 import cookies from "js-cookie";
+import { Link } from "react-router-dom"; // Importing Link from react-router-dom
 
 
 export default function Navbar() {
@@ -28,9 +29,8 @@ export default function Navbar() {
       <nav>
         <ul>
           <li>
-            <a href="">
-              Courses
-            </a>
+             <Link to="/courses">Courses</Link>
+
           </li>
           <li>
             <a href="">Mentors</a>

@@ -13,7 +13,6 @@ export default function Home() {
         <img src={profile} alt="Profile" className="profile_img" />
         <img src={bitcoin2} alt="no" className="bitcoin2_home" />
         <img src={bitcoin1} alt="no" className="bitcoin1_home" />
-
       </div>
       <div className="courses">
         <div className="course">
@@ -23,11 +22,10 @@ export default function Home() {
               <p>CRYPTO TRADING<br></br> SERIES FOR BEGINNERS</p>
               <h4>FREE</h4>
               <h4>FREE</h4>
-
             </div>
           </div>
         </div>
-        <div className="course">
+        <div className="course">    
           <img src={course1} alt="Course 2" />
           <div className="caption-content">
             <p>LEARN CRYPTO TRADING FROM SCRATCH IN 20 DAYS</p>
