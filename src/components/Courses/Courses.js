@@ -17,6 +17,7 @@ export default function Courses() {
       image: binoy_image,
       teacher: "Binoy Babu",
       amount: "Rs 4000",
+      link_to:"/a/20days-of-trading"
     },
     
     

@@ -1,5 +1,6 @@
 import React from "react";
 import "./smccourse.css";
+import { Link } from "react-router-dom";
 import sreekanth_image from "./sreekanth_class_image.jpg"
 export default function SMCcourse() {
   return (
@@ -11,7 +12,7 @@ export default function SMCcourse() {
         <div className="smc_course_desc">
             <h1>Zero to Hero: Mastering SMC(Smart Money Concepts) – Advanced Trading Concepts   </h1>
             <p>From Zero to Hero: Mastering Trading</p>
-            <button>Buy Course For Rs3000</button>
+            <Link to='/payment'><button>Buy Course For Rs3000</button></Link>
         </div>
         
       </div>
